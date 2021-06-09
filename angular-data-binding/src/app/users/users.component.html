@@ -1,0 +1,32 @@
+<h3>{{message}}</h3>
+
+<!-- <h3>User Status</h3>
+<div *ngIf="isActive">
+    <p>User Name : {{ userObj.name }}
+        : User Age : {{ userObj.age }}</p>
+</div>
+<div *ngIf="!isActive">
+    <p>User is not active.</p>
+</div> -->
+
+<!-- <h3>List of Projects</h3>
+<ul *ngFor="let project of projects">
+    <li>{{project}}</li>
+</ul> -->
+
+<table border="1" cellpadding="10" cellspacing="0">
+    <thead>
+        <tr>
+            <th>S. No.</th>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of userList; let i = index">
+            <td>{{i + 1}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.age}}</td>
+        </tr>
+    </tbody>
+</table>

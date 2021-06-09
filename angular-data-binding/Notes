@@ -1,0 +1,36 @@
+
+ng new angular-data-binding
+cd angular-data-binding
+ng serve -o
+
+ctrl + C
+
+npm install
+npm install --only=dev
+ng serve -o
+
+Topics 1: Data Binding:
+
+	1. Interpolation Binding
+	2. One Way Data Binding/Property Binding (Model/Component to View)
+	3. One Way Data Binding/Event Binding (Component/Model to View)
+	4. Two Way Data Binding (With and Without ngModel)
+
+Topic 2: Event Binding Demo
+
+
+ng new angular-routing-project
+cd angular-routing-project
+npm install
+npm install --only=dev
+ng serve -o
+
+ctrl + C
+
+npm install
+npm install --only=dev
+ng serve -o
+
+	
+	
+	
