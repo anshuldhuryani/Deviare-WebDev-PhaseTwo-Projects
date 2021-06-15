@@ -1,18 +1,6 @@
 {
   "employees": [
     {
-      "id": 1001,
-      "name": "King Kochhar",
-      "email": "king.kochhar@gmail.com",
-      "salary": 20000
-    },
-    {
-      "id": 1002,
-      "name": "Sarah Bowling",
-      "email": "sarah.bowling@gmail.com",
-      "salary": 25000
-    },
-    {
       "id": 1003,
       "name": "John Smith",
       "email": "john.smith@gmail.com",
@@ -20,9 +8,9 @@
     },
     {
       "id": 1004,
-      "name": "Roger Lee",
-      "email": "roger.lee@gmail.com",
-      "salary": 40000
+      "name": "Roger Lee John",
+      "email": "roger.lee.john@gmail.com",
+      "salary": "400000"
     },
     {
       "id": 1005,
@@ -38,9 +26,15 @@
     },
     {
       "id": 1007,
-      "name": "Bhawna Gunwani",
-      "email": "bhawna@gmail.com",
-      "salary": "45000"
+      "name": "Bhawna Gunwani Trainer",
+      "email": "tr.bhawna@gmail.com",
+      "salary": "90000"
+    },
+    {
+      "id": 1008,
+      "name": "Disha Chugh",
+      "email": "disha.chugh@gmail.com",
+      "salary": "55000"
     }
   ]
 }
