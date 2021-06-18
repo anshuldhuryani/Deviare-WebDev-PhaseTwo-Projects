@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-md-3">&nbsp;</div>
+    <div class="col-md-6">
+
+        <form>
+            <div class="mb-3">
+                <label for="username" class="form-label">Email</label>
+                <input type="text" class="form-control" name="username" id="username" [(ngModel)]="user.username" />
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Password</label>
+                <input type="password" class="form-control" name="password" id="password" [(ngModel)]="user.password" />
+            </div>
+
+            <a class="btn btn-secondary" href="javascript:void(0);" (click)="login()">Login</a>
+        </form>
+
+    </div>
+    <div class="col-md-3">&nbsp;</div>
+</div>

@@ -1,0 +1,14 @@
+<div class="container">
+    <form>
+        <div class="mb-3">
+            <label for="username" class="form-label">Email</label>
+            <input type="text" class="form-control" name="username" id="username" [(ngModel)]="user.username" />
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Password</label>
+            <input type="password" class="form-control" name="password" id="password" [(ngModel)]="user.password" />
+        </div>
+    
+        <button type="button" class="btn btn-secondary" (click)="login()">Login</button>
+    </form>
+</div>

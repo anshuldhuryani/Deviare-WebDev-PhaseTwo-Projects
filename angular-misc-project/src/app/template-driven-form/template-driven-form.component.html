@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Demonstrating Template Driven Forms</h2>
+            <form #userForm="ngForm" (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Enter Name Here" name="name"
+                        [(ngModel)]="user.name" #name="ngModel"
+                        [ngClass]="{ 'is-invalid': userForm.submitted && name.invalid}" required />
+                    <div *ngIf="userForm.submitted && name.invalid" class="invalid-feedback">
+                        <p *ngIf=name.errors.required>Name is Required</p>
+                    </div>
+                </div>
+                <br />
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Enter Email Here" name="email"
+                        [(ngModel)]="user.email" #email="ngModel"
+                        [ngClass]="{ 'is-invalid': userForm.submitted && name.invalid}" required />
+                    <div *ngIf="userForm.submitted && email.invalid" class="invalid-feedback">
+                        <p *ngIf=email.errors.required>Email is Required</p>
+                    </div>
+                </div>
+                <br />
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Enter City Here" name="city"
+                        [(ngModel)]="user.city" #city="ngModel"
+                        [ngClass]="{ 'is-invalid': userForm.submitted && name.invalid}" required />
+                    <div *ngIf="userForm.submitted && city.invalid" class="invalid-feedback">
+                        <p *ngIf=city.errors.required>City is Required</p>
+                    </div>
+                </div>
+                <br />
+                <input type="submit" value="Submit" class="btn btn-success" />
+            </form>
+        </div>
+    </div>
+</div>

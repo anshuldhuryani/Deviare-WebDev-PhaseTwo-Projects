@@ -1,0 +1,90 @@
+{
+  "employees": [
+    {
+      "id": 1003,
+      "name": "John Smith",
+      "email": "john.smith@gmail.com",
+      "salary": 30000
+    },
+    {
+      "id": 1004,
+      "name": "Roger Lee John",
+      "email": "roger.lee.john@gmail.com",
+      "salary": "400000"
+    },
+    {
+      "id": 1005,
+      "name": "Kim Joseph",
+      "email": "kim.joseph@gmail.com",
+      "salary": 45000
+    },
+    {
+      "id": 1006,
+      "name": "Kartik Sharma",
+      "email": "kartik.sharma@gmail.com",
+      "salary": "50000"
+    },
+    {
+      "id": 1007,
+      "name": "Bhawna Gunwani Trainer",
+      "email": "tr.bhawna@gmail.com",
+      "salary": "90000"
+    },
+    {
+      "id": 1008,
+      "name": "Disha Chugh",
+      "email": "disha.chugh@gmail.com",
+      "salary": "55000"
+    },
+    {
+      "id": 1009,
+      "name": "",
+      "email": "",
+      "salary": 0
+    }
+  ],
+  "users": [
+    {
+      "id": 5001,
+      "username": "king",
+      "password": "123456",
+      "email": "king@gmail.com"
+    },
+    {
+      "id": 5002,
+      "username": "john",
+      "password": "123456",
+      "email": "john@gmail.com"
+    },
+    {
+      "username": "bhawna",
+      "email": "bhawna@gmail.com",
+      "password": "123456",
+      "id": 5003
+    },
+    {
+      "username": "gunwani",
+      "email": "gunwani@gmail.com",
+      "password": "123456",
+      "id": 5004
+    },
+    {
+      "username": "kartik",
+      "email": "kartik@gmail.com",
+      "password": "123456",
+      "id": 5005
+    },
+    {
+      "username": "hitesh",
+      "email": "hitesh@gmail.com",
+      "password": "123456",
+      "id": 5006
+    },
+    {
+      "username": "roger",
+      "email": "roger@gmail.com",
+      "password": "123456",
+      "id": 5007
+    }
+  ]
+}

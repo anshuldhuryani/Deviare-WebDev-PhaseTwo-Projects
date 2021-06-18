@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Demonstrating Reactive Forms</h2>
+            <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Enter Name Here.. " formControlName="name"
+                        [(ngModel)]="user.name" />
+                    <div *ngIf="f.name.touched && f.name.invalid" class="text-danger">
+                        <div *ngIf="f.name.errors.required">Name is Required..</div>
+                        <div *ngIf="f.name.errors.minlength">Minimum 5 characters are required..</div>
+                    </div>
+                </div>
+                <br />
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Enter Email Here.. " formControlName="email"
+                        [(ngModel)]="user.email" />
+                    <div *ngIf="f.email.touched && f.email.invalid" class="text-danger">
+                        <div *ngIf="f.email.errors.required">Email is Required..</div>
+                    </div>
+                </div>
+                <br />
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Enter City Here.. " formControlName="city"
+                        [(ngModel)]="user.city" />
+                    <div *ngIf="f.city.touched && f.city.invalid" class="text-danger">
+                        <div *ngIf="f.city.errors.required">City is Required..</div>
+                    </div>
+                </div>
+                <br />
+                <input type="submit" value="Submit" class="btn btn-success" [disabled]="!userForm.valid" />
+            </form>
+        </div>
+    </div>
+</div>

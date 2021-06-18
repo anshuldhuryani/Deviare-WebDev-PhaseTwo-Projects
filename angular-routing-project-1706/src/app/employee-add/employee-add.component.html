@@ -1,0 +1,19 @@
+<h2>Add New Employee</h2>
+
+<form name="form" #empForm="ngForm" (ngSubmit)="empForm.form.valid && addEmployee()" novalidate>
+    <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" [(ngModel)]="employee.name" name="name" id="name" #name="ngModel" required />
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" name="email" id="email" #email="ngModel" [(ngModel)]="employee.email" required />
+    </div>
+    <div class="mb-3">
+        <label for="salary" class="form-label">Salary</label>
+        <input type="text" class="form-control" name="salary" id="salary" #salary="ngModel" [(ngModel)]="employee.salary" required />
+    </div>
+
+    <button type="submit" class="btn btn-secondary">Add Employee</button> |
+    <button type="button" class="btn btn-secondary" (click)="resetAll()">Reset</button>
+</form>
